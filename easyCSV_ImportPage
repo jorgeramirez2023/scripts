@@ -1,12 +1,14 @@
+<div id="easycsv_import_form"></div>
 <script src="https://www.easycsv.io/embed/import_form.js?sheet_token=3a0be3c8-3815-4657-8c9f-e31fcb83ae1a" id="easycsv_script"></script>
 <script>
   const interval = setInterval(() => {
     const downloadLink = document.getElementById("download_sample");
     if (downloadLink) {
+      // Replace with the template link 
       downloadLink.href = "https://docs.google.com/spreadsheets/d/1ITnT96wB0X5b3APJ18AS1zgU9gDRP6c6/edit?usp=sharing&ouid=102643583237523287893&rtpof=true&sd=true";
-      downloadLink.removeAttribute("download"); // quitamos atributo de descarga
+      downloadLink.removeAttribute("download"); 
       downloadLink.textContent = "View Spreadsheet Template";
-      clearInterval(interval); // detenemos el chequeo
+      clearInterval(interval); 
     }
   }, 100); 
   const interval2 = setInterval(() => {
